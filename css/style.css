@@ -242,10 +242,12 @@ input:disabled {
 .title {
     color: var(--black-new);
     font-size: 1.375rem;
-    font-style: 1.2;
     font-weight: 700;
     line-height: 1.18;
     letter-spacing: -0.025rem;
+}
+.title:not(:last-child){
+    margin-bottom: 1.5rem;
 }
 .title-contact {
     color: #181818;
@@ -2803,14 +2805,6 @@ ul {
 .link--14 {
     font-size: 0.875rem;
     line-height: 1.625rem;
-}
-
-.title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 1;
-    letter-spacing: -0.1rem;
-    margin-bottom: 1.875rem;
 }
 .title--white {
     color: #fff;
