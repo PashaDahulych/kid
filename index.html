@@ -32,6 +32,13 @@
         <div class="main-wrapper">
             <div class="main-wrapper__before"></div>
             <!-- BEGIN HEADER -->
+            <header class="header">
+                <div class="header__container">
+                    <button data-popup="#popup" type="button" class="button">
+                        Попап
+                    </button>
+                </div>
+            </header>
             <!-- <header class="header">
                 <div class="header-top">
                     <div class="container">
@@ -942,13 +949,11 @@
                                         value="1"
                                         name="c_1"
                                     />
-                                    <label for="c_1" class="checkbox__label"
-                                        >
-                                        <span class="checkbox__icon">
-                                            
-                                        </span>
+                                    <label for="c_1" class="checkbox__label">
+                                        <span class="checkbox__icon"> </span>
                                         <span class="checkbox__text"
-                                            >Подзвоніть мені для уточнення деталей замовлення</span
+                                            >Подзвоніть мені для уточнення
+                                            деталей замовлення</span
                                         ></label
                                     >
                                 </div>
@@ -1128,203 +1133,251 @@
                 </div>
             </footer> -->
         </div>
+        <div id="popup" aria-hidden="true" class="popup">
+            <div class="popup__wrapper">
+                <div class="popup__content">
+                    <button
+                        data-close
+                        type="button"
+                        class="popup__close"
+                    ></button>
+                    <div class="popup__body">
+                        <h2 class="popup__title title">Кошик</h2>
+                        <form class="popup__form" action="#" method="POST">
+                            <div class="popup__order-content">
+                                <div class="order__item">
+                                    <div class="order__row">
+                                        <a href="#" class="order__image">
+                                            <picture>
+                                                <source
+                                                    type="image/webp"
+                                                    srcset="
+                                                        img/image-product-10.webp
+                                                    "
+                                                />
+                                                <img
+                                                    src="img/image-product-10.jpg"
+                                                    alt=""
+                                                    width="205"
+                                                    height="260"
+                                                />
+                                            </picture>
+                                        </a>
+                                        <div class="order__body">
+                                            <div class="order__label label">
+                                                <span></span> в наявності
+                                            </div>
+                                            <div class="order__sub-title">
+                                                <a href="#"
+                                                    >Зимовий самокат на лижні 2
+                                                    в 1 SB-Snowcooter-01</a
+                                                >
+                                            </div>
+                                            <div class="order__code">
+                                                Код: 1751283
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__actions">
+                                        <div class="order__l-action">
+                                            <div class="calc calc--popup">
+                                                <a
+                                                    href="#"
+                                                    class="calc__btn calc__minus"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="36"
+                                                        height="36"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            fill="none"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            d="M11.625 18h12"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                                <input
+                                                    type="text"
+                                                    class="calc__input"
+                                                    value="1"
+                                                />
+                                                <a
+                                                    href="#"
+                                                    class="calc__btn calc__plus"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="36"
+                                                        height="36"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            stroke="none"
+                                                            fill-rule="evenodd"
+                                                            d="M17.955 11.5a.5.5 0 0 0-1 0v5.498h-5.5a.5.5 0 1 0 0 1h5.5V23.5a.5.5 0 1 0 1 0v-5.502h5.504a.5.5 0 0 0 0-1h-5.504V11.5Z"
+                                                            clip-rule="evenodd"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="order__prices">
+                                                <div class="order__prices--old">
+                                                    12050 грн
+                                                </div>
+                                                <div
+                                                    class="order__prices--sale"
+                                                >
+                                                    10500 грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="order__remove">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="1.5"
+                                                    d="M14.844 10v7m-4-7v7m-4-11v11.8c0 1.12 0 1.68.218 2.108a2 2 0 0 0 .874.874c.427.218.987.218 2.105.218h5.606c1.118 0 1.677 0 2.104-.218.377-.192.683-.498.875-.874.218-.428.218-.987.218-2.105V6m-12 0h2m-2 0h-2m4 0h8m-8 0c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.082-1.083C10.446 3 10.912 3 11.844 3h2c.932 0 1.398 0 1.765.152a2 2 0 0 1 1.082 1.083c.153.367.153.833.153 1.765m0 0h2m0 0h2"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="order__item">
+                                    <div class="order__row">
+                                        <a href="#" class="order__image">
+                                            <picture>
+                                                <source
+                                                    type="image/webp"
+                                                    srcset="
+                                                        img/image-product-10.webp
+                                                    "
+                                                />
+                                                <img
+                                                    src="img/image-product-10.jpg"
+                                                    alt=""
+                                                    width="205"
+                                                    height="260"
+                                                />
+                                            </picture>
+                                        </a>
+                                        <div class="order__body">
+                                            <div
+                                                class="order__label label label--pre"
+                                            >
+                                                <span></span> передзамовлення
+                                            </div>
+                                            <div class="order__sub-title">
+                                                <a href="#"
+                                                    >Гойдалка Geom Double
+                                                    KIDIGO</a
+                                                >
+                                            </div>
+                                            <div class="order__code">
+                                                Код: 09324
+                                            </div>
+                                            <div class="order__color">
+                                                Колір: <span>Гама 1</span>
+                                            </div>
+                                            <div class="oder__type">
+                                                Вид сидіння:
+                                                <span>Сидіння Adult</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__actions">
+                                        <div class="order__l-action">
+                                            <div class="calc calc--popup">
+                                                <a
+                                                    href="#"
+                                                    class="calc__btn calc__minus"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="36"
+                                                        height="36"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            fill="none"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            d="M11.625 18h12"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                                <input
+                                                    type="text"
+                                                    class="calc__input"
+                                                    value="1"
+                                                />
+                                                <a
+                                                    href="#"
+                                                    class="calc__btn calc__plus"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="36"
+                                                        height="36"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            stroke="none"
+                                                            fill-rule="evenodd"
+                                                            d="M17.955 11.5a.5.5 0 0 0-1 0v5.498h-5.5a.5.5 0 1 0 0 1h5.5V23.5a.5.5 0 1 0 1 0v-5.502h5.504a.5.5 0 0 0 0-1h-5.504V11.5Z"
+                                                            clip-rule="evenodd"
+                                                        />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="order__prices">
+                                                <div class="order__price">
+                                                    125400 грн
+                                                </div>
+                                            </div>
+                                        </div>
 
-        <!-- <div class="hidden">
-            <div class="popup" id="popup-auth">
-                <div class="popup__title title-h1">Авторизація</div>
-                <form class="form js-form-auth" action="16-cabinet-history.html">
-                    <div class="y-row">
-                        <div class="y-col">
-                            <label class="form-label form-label--m-hide">e-mail</label>
-                            <div class="form-input-wrap">
-                                <input name="email" type="email" class="form-input" placeholder="Ваш e-mail" />
+                                        <a href="#" class="order__remove">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="1.5"
+                                                    d="M14.844 10v7m-4-7v7m-4-11v11.8c0 1.12 0 1.68.218 2.108a2 2 0 0 0 .874.874c.427.218.987.218 2.105.218h5.606c1.118 0 1.677 0 2.104-.218.377-.192.683-.498.875-.874.218-.428.218-.987.218-2.105V6m-12 0h2m-2 0h-2m4 0h8m-8 0c0-.932 0-1.398.152-1.765a2 2 0 0 1 1.082-1.083C10.446 3 10.912 3 11.844 3h2c.932 0 1.398 0 1.765.152a2 2 0 0 1 1.082 1.083c.153.367.153.833.153 1.765m0 0h2m0 0h2"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="y-col">
-                            <label class="form-label form-label--m-hide">Пароль</label>
-                            <div class="form-input-wrap">
-                                <input name="password" type="password" class="form-input" placeholder="Введіть ваш пароль" />
+                            <div class="popup__total-price">
+                                <span>Сума:</span>
+                                <span>125500 грн</span>
                             </div>
-                            <div class="form-info">
-                                <a href="#popup-password" class="link js-popup">Нагадати пароль</a>
+                            <div class="popup__actions">
+                                <a href="" class="popup__btn-tranps btn-transp"
+                                    >Продовжити покупки</a
+                                >
+                                <button type="submit" class="popup__button button">Оформити замовлення</button>
                             </div>
-                        </div>
-                        <div class="y-col text-center">
-                            <button class="btn">Увійти</button>
-                            <a href="#popup-register" class="link js-popup">Зареєструватися</a>
-                        </div>
-                    </div>
-                </form>
-
-                <div class="line-or"><span>або</span></div>
-                <div class="popup-social">
-                    <div class="popup-social__title">
-                        Увійти через соцмережі
-                    </div>
-                    <div class="popup-social__btns">
-                        <a href="#" class="btn btn--border-light-blue-2 btn--google">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
-                                <g clip-path="url(#a1)">
-                                    <path fill="#4285F4" d="M19.805 10.23c0-.68-.055-1.363-.172-2.032H10.2v3.851h5.402a4.629 4.629 0 0 1-2 3.039v2.499h3.223c1.893-1.742 2.98-4.314 2.98-7.357Z" />
-                                    <path fill="#34A853" d="M10.2 20c2.697 0 4.972-.885 6.629-2.413l-3.223-2.499c-.896.61-2.054.955-3.402.955-2.609 0-4.821-1.76-5.615-4.126H1.264v2.576A10.001 10.001 0 0 0 10.2 20Z" />
-                                    <path fill="#FBBC04" d="M4.586 11.917a5.99 5.99 0 0 1 0-3.829V5.512H1.264a10.009 10.009 0 0 0 0 8.98l3.322-2.575Z" />
-                                    <path fill="#EA4335" d="M10.2 3.958a5.434 5.434 0 0 1 3.836 1.5l2.855-2.856a9.611 9.611 0 0 0-6.69-2.601 9.998 9.998 0 0 0-8.937 5.511l3.322 2.576c.79-2.37 3.005-4.13 5.614-4.13Z" />
-                                </g>
-                                <defs>
-                                    <clipPath id="a1">
-                                        <path fill="#fff" d="M0 0h20v20H0z" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            Google
-                        </a>
-                        <a href="#" class="btn btn--border-light-blue-2 btn--google">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none">
-                                <path
-                                    fill="#1877F2"
-                                    d="M20.531 10c0-5.523-4.477-10-10-10s-10 4.477-10 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.493-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.563V10h2.773l-.443 2.89h-2.33v6.988c4.78-.75 8.437-4.887 8.437-9.878Z"
-                                />
-                                <path
-                                    fill="#fff"
-                                    d="m14.424 12.89.443-2.89h-2.773V8.125c0-.79.387-1.563 1.63-1.563h1.26v-2.46s-1.144-.196-2.238-.196c-2.284 0-3.777 1.385-3.777 3.89V10h-2.54v2.89h2.54v6.988c1.035.163 2.09.163 3.125 0v-6.987h2.33Z"
-                                />
-                            </svg>
-                            Facebook
-                        </a>
+                        </form>
                     </div>
                 </div>
             </div>
-
-            <div class="popup" id="popup-password">
-                <div class="popup__title title-h1">Відновлення паролю</div>
-                <form class="form js-form-password">
-                    <div class="y-row">
-                        <div class="y-col">
-                            <label class="form-label form-label--m-hide">e-mail</label>
-                            <div class="form-input-wrap">
-                                <input name="email" type="email" class="form-input" placeholder="Ваш e-mail" />
-                            </div>
-                        </div>
-                        <div class="y-col text-center">
-                            <button class="btn">Скинути пароль</button>
-                            <a href="#popup-auth" class="link js-popup">Я вже згадав пароль</a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <div class="popup" id="popup-register">
-                <div class="popup__title title-h1">Реєстрація</div>
-                <form class="form js-form-register">
-                    <div class="y-row">
-                        <div class="y-col">
-                            <label class="form-label form-label--m-hide">Ім’я</label>
-                            <div class="form-input-wrap">
-                                <input name="name" type="text" class="form-input" placeholder="Ваше Ім’я" />
-                            </div>
-                        </div>
-                        <div class="y-col">
-                            <label class="form-label form-label--m-hide">Прізвище</label>
-                            <div class="form-input-wrap">
-                                <input name="lastname" type="text" class="form-input" placeholder="Ваше Прізвище" />
-                            </div>
-                        </div>
-                        <div class="y-col">
-                            <label class="form-label form-label--m-hide">Телефон</label>
-                            <div class="form-input-wrap">
-                                <input name="phone" type="tel" class="form-input form-phone" />
-                            </div>
-                        </div>
-                        <div class="y-col">
-                            <label class="form-label form-label--m-hide">e-mail</label>
-                            <div class="form-input-wrap">
-                                <input name="email" type="email" class="form-input" placeholder="Ваш e-mail" />
-                            </div>
-                        </div>
-                        <div class="y-col">
-                            <label class="form-label form-label--m-hide">Пароль</label>
-                            <div class="form-input-wrap">
-                                <input name="password" type="password" class="form-input" placeholder="Введіть ваш пароль" />
-                            </div>
-                        </div>
-                        <div class="y-col text-center">
-                            <div class="form-info">
-                                Реєструючись, я погоджуюсь <br />
-                                з&nbsp;<a href="#">Умовами використання сайту</a>
-                            </div>
-                            <button class="btn">Зареєструватися</button>
-                            <a href="#popup-auth" class="link js-popup">Я вже зареєстрований</a>
-                        </div>
-                    </div>
-                </form>
-
-                <div class="line-or"><span>або</span></div>
-                <div class="popup-social">
-                    <div class="popup-social__title">
-                        Увійти через соцмережі
-                    </div>
-                    <div class="popup-social__btns">
-                        <a href="#" class="btn btn--border-light-blue-2 btn--google">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
-                                <g clip-path="url(#a2)">
-                                    <path fill="#4285F4" d="M19.805 10.23c0-.68-.055-1.363-.172-2.032H10.2v3.851h5.402a4.629 4.629 0 0 1-2 3.039v2.499h3.223c1.893-1.742 2.98-4.314 2.98-7.357Z" />
-                                    <path fill="#34A853" d="M10.2 20c2.697 0 4.972-.885 6.629-2.413l-3.223-2.499c-.896.61-2.054.955-3.402.955-2.609 0-4.821-1.76-5.615-4.126H1.264v2.576A10.001 10.001 0 0 0 10.2 20Z" />
-                                    <path fill="#FBBC04" d="M4.586 11.917a5.99 5.99 0 0 1 0-3.829V5.512H1.264a10.009 10.009 0 0 0 0 8.98l3.322-2.575Z" />
-                                    <path fill="#EA4335" d="M10.2 3.958a5.434 5.434 0 0 1 3.836 1.5l2.855-2.856a9.611 9.611 0 0 0-6.69-2.601 9.998 9.998 0 0 0-8.937 5.511l3.322 2.576c.79-2.37 3.005-4.13 5.614-4.13Z" />
-                                </g>
-                                <defs>
-                                    <clipPath id="a2">
-                                        <path fill="#fff" d="M0 0h20v20H0z" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            Google
-                        </a>
-                        <a href="#" class="btn btn--border-light-blue-2 btn--google">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none">
-                                <path
-                                    fill="#1877F2"
-                                    d="M20.531 10c0-5.523-4.477-10-10-10s-10 4.477-10 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.493-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.563V10h2.773l-.443 2.89h-2.33v6.988c4.78-.75 8.437-4.887 8.437-9.878Z"
-                                />
-                                <path
-                                    fill="#fff"
-                                    d="m14.424 12.89.443-2.89h-2.773V8.125c0-.79.387-1.563 1.63-1.563h1.26v-2.46s-1.144-.196-2.238-.196c-2.284 0-3.777 1.385-3.777 3.89V10h-2.54v2.89h2.54v6.988c1.035.163 2.09.163 3.125 0v-6.987h2.33Z"
-                                />
-                            </svg>
-                            Facebook
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="popup popup--lg" id="popup-question">
-                <div class="popup__title title-h1">Поставити запитання</div>
-                <form class="form js-form-question">
-                    <div class="y-row">
-                        <div class="y-col">
-                            <label class="form-label form-label--m-hide">Ім’я</label>
-                            <div class="form-input-wrap">
-                                <input name="name" type="text" class="form-input" placeholder="Ваше Ім’я" />
-                            </div>
-                        </div>
-                        <div class="y-col">
-                            <label class="form-label form-label--m-hide">e-mail</label>
-                            <div class="form-input-wrap">
-                                <input name="email" type="email" class="form-input" placeholder="Ваш e-mail" />
-                            </div>
-                        </div>
-                        <div class="y-col">
-                            <div class="form-input-wrap">
-                                <textarea name="question" class="form-input form-textarea" placeholder="Напишіть своє запитання"></textarea>
-                            </div>
-                        </div>
-                        <div class="y-col text-center">
-                            <button class="btn">Відправити</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div> -->
+        </div>
 
         <!-- BODY EOF   -->
         <script src="js/jquery-3.6.0.min.js?ver1.0"></script>
@@ -1337,5 +1390,12 @@
         <script src="js/select2.full.min.js"></script>
         <script src="js/air-datepicker.js"></script>
         <script src="js/custom.js"></script>
+        <script src="js/popup.js"></script>
+        <script>
+            window.onload = function () {
+                let popup = new Popup()
+                popup.initPopups()
+            }
+        </script>
     </body>
 </html>
