@@ -2742,6 +2742,9 @@ body.compensate-for-scrollbar {
 .checkout-content__decor {
     border-bottom: 0.0625rem solid #f1f1f1;
 }
+.checkout-content__delivery-type span:last-of-type{
+    text-align: right;
+}
 .checkout-content__body {
 }
 .checkout-content__total-price {
@@ -2761,6 +2764,7 @@ body.compensate-for-scrollbar {
 .checkout-content__total-price span:last-of-type {
     font-size: 1.5rem;
     letter-spacing: -0.0125rem;
+    
 }
 .checkout-content__checkbox {
 }
