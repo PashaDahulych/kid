@@ -367,7 +367,7 @@ body::after {
     transition: -webkit-transform 0.3s ease 0s;
     transition: transform 0.3s ease 0s;
     transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
-    padding: 1.25rem 2.5rem;
+    padding: 1.25rem 2.5rem 2.5rem 2.5rem;
     width: 100%;
     max-width: 60.75rem;
     background-color: var(--white);
@@ -2827,7 +2827,7 @@ body.compensate-for-scrollbar {
         gap: 1.25rem;
     }
     .popup__content {
-        padding: 0.625rem 1.25rem;
+        padding: 0.625rem 1.25rem 1.25rem 1.25rem;
     }
     .popup__btn-tranps,
     .popup__button {
