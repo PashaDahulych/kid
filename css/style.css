@@ -2798,9 +2798,9 @@ body.compensate-for-scrollbar {
     .checkout-content__col--2 {
         margin-left: 2.5rem;
     }
-    .popup__form {
+    /* .popup__form {
         padding-bottom: 4.25rem;
-    }
+    } */
 }
 @media screen and (max-width: 991.98px) {
     .order__item {
