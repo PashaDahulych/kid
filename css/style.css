@@ -259,6 +259,7 @@ input:disabled {
     gap: 0.25rem;
     padding: 0.625rem 0.3125rem;
      border: 0.0625rem solid #e7ebf9;
+     flex: 0 0 126px;
     
 }
 .calc__btn {
@@ -2573,11 +2574,13 @@ body.compensate-for-scrollbar {
     font-weight: 600;
     line-height: 1.16;
 }
+
 .order__actions,
 .order__l-action {
     display: flex;
     align-items: center;
     gap: 2.5rem;
+    /* flex: 0 1 290px; */
 }
 .order__actions {
     justify-content: space-between;
@@ -2587,6 +2590,7 @@ body.compensate-for-scrollbar {
     display: flex;
     flex-direction: column;
     flex: 0 0 88px;
+    align-items: flex-start;
 }
 
 .order__prices--old {
@@ -2609,7 +2613,7 @@ body.compensate-for-scrollbar {
     top: 47.5%;
     transform: translateY(-50%);
     height: 0.0625rem;
-    width: 90%;
+    width: 100%;
     background-color: #9d9ea2;
 }
 .order__prices--sale {
@@ -2798,6 +2802,9 @@ body.compensate-for-scrollbar {
     .checkout-content__col--2 {
         margin-left: 2.5rem;
     }
+    .order__actions{
+    flex: 0 1 315px
+}
     /* .popup__form {
         padding-bottom: 4.25rem;
     } */
